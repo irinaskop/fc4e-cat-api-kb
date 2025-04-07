@@ -13,4 +13,7 @@ public class ManagerProviderRepository implements PanacheRepository<ManagerProvi
         return findAll().page(page, size).list();
     }
 
+    public List<ManagerProvider> getManagerProviderIdentifiersIDs() {
+        return findAll().list();
+    }
 }
